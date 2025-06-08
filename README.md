@@ -28,7 +28,7 @@ In the final step, the data stored in Snowflake was connected to Power BI. A rep
 
 Here is the workflow (data analysis) of  this project
 
-![Texte alternatif de l'image](images/data_pipeline.png)
+![Texte alternatif de l'image](images/data_pipeline(1).png)
 
 **The dashboard :** 
 
