@@ -1,4 +1,4 @@
-# ETL Project : Youtube-data-pipeline
+# ETL Project : Youtube-data-analysis
 
 ## Introduction
 This `README` document provides an overview of an `ETL` (Extract, Transform, Load) project developed to extract data from a `YouTube` channel using the YouTube API and `Python`, perform data transformations with the `Pandas` library, export the transformed data to a CSV file, load the data into `Snowflake` data warehouse, and create a reporting dashboard using `Power BI`.
@@ -26,9 +26,9 @@ The CSV file generated in Step 2 was loaded into Snowflake, a cloud-based data w
 ### Step 4: Reporting with Power BI
 In the final step, the data stored in Snowflake was connected to Power BI. A reporting dashboard was created in Power BI, allowing users to visualize and interact with the YouTube channel data. This dashboard can be customized to display various metrics and insights from the data.
 
-Here is the workflow (data pipeline) of  this project
+Here is the workflow (data analysis) of  this project
 
-![Texte alternatif de l'image](images/data_pipeline.png)
+![Texte alternatif de l'image](images/data_analysis.png)
 
 **The dashboard :** 
 
