@@ -4,13 +4,24 @@
 This `README` document provides an overview of an `ETL` (Extract, Transform, Load) project developed to extract data from a `YouTube` channel using the YouTube API and `Python`, perform data transformations with the `Pandas` library, export the transformed data to a CSV file, load the data into `Snowflake` data warehouse, and create a reporting dashboard using `Power BI`.
 
 ## Project Overview
-The project aims to automate the extraction of data from a YouTube channel, transform the data into a suitable format, and make it available for analysis through a Power BI dashboard. By following a structured ETL process, this project streamlines data retrieval, preparation, and visualization.
+This project demonstrates how to extract, transform, and visualize data from a YouTube channel using YouTube Data API, Python, MySQL, and Power BI. It automates the end-to-end data pipeline, ensuring that the Power BI dashboard stays up-to-date dynamically with the latest channel statistics.
 
 ## Tools Used
 - `Python`: Used for scripting and data manipulation.
 - `Pandas`: Employed for data transformation and manipulation.
 - `YouTube API`: Utilized for data extraction from the YouTube channel.
 - `Power BI`: Employed for creating interactive dashboards and reports.
+- `MySQL` : for structured data storage
+
+## Dynamic Dashboard with Power BI
+Power BI is connected directly to the MySQL database. The dashboard reads live data via:
+Power BI MySQL connector
+Configured on-premises data gateway for secure connectivity
+
+## Scheduled Automation
+
+The Python script can be scheduled via Windows Task Scheduler to run periodically (e.g., hourly or daily).
+Power BI Service can be configured for scheduled refresh to pull the latest data from MySQL and update the visuals automatically.
 
 ## Project Steps
 
@@ -26,23 +37,16 @@ The CSV file generated in Step 2 was loaded into Snowflake, a cloud-based data w
 ### Step 4: Reporting with Power BI
 In the final step, the data stored in Snowflake was connected to Power BI. A reporting dashboard was created in Power BI, allowing users to visualize and interact with the YouTube channel data. This dashboard can be customized to display various metrics and insights from the data.
 
+
+
 Here is the workflow (data analysis) of  this project
 
 ![Texte alternatif de l'image](images/data_pipeline(1).png)
 
 **The dashboard :** 
 
-![Texte alternatif de l'image](images/pie.png)
+![Texte alternatif de l'image](images/pie1.png)
 
-
-## Acknowledgment
-I would like to express our gratitude to the following resources for their valuable contributions to this project:
-
-The official documentation of `Python` language and `Pandas` library.
-
-The documentation provided by `YouTube API` for configuring and working with the YouTube API.
-
-The `snowflake` documentation, which aided in loaded the data into  data warehouse.
 
 
 
